@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <title>MyNotes</title>
+</head>
+
+<body>
+
+    <div id="mainWindow">
+        <div class="section header">
+            <h1>My notes</h1>
+            <div>
+                <i class="fas fa-filter" id="filterBtn" style="font-size:20px"></i>
+                <a href="newNote.html">
+                    <i class="fa fa-plus" style="font-size:24px"></i>
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="section">
+            <ul id="allNotes"></ul>
+        </div>
+
+
+        <div id="optionsMenu" class="hidden">
+            <a href="editNote.html">
+                <i class="fas fa-edit" id="noteEdit" style="font-size:24px"></i>
+            </a>
+            <i class="fas fa-trash" id="noteDelete" style="font-size:24px"></i>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="filterAnimation.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+
+
+
+</body>
+
+
+</html>

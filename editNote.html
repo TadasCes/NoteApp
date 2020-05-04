@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <title>MyNotes</title>
+</head>
+
+<body onload="loadNote()">
+
+    <div id="addNoteWindow">
+        <div class="editHeader">
+            <div class="d-flex">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left " style="font-size:24px"></i>
+                </a>
+                <h1 style="padding-left:30px;">Edit note</h1>
+            </div>
+            <div>
+                <a href="index.html" id="addNoteBtn">
+                    <i class="fas fa-check" style="font-size:24px"></i>
+                </a>
+                <a href="index.html" id="noteDelete" >
+                    <i class="fas fa-trash" style="font-size:24px"></i>
+                </a>
+            </div>
+            
+        </div>
+
+        <form>
+            <input type='text' id="noteTitle" placeholder="Note title">
+            <hr>
+            <textarea type='text' id="noteText" placeholder="Note text"></textarea>
+
+            <hr>
+        </form>
+    </div>
+    <p id="error"></p>
+
+    <script type="text/javascript" src="main.js"></script>
+
+
+</body>
+
+
+</html>

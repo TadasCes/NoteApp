@@ -1,0 +1,168 @@
+body {
+    z-index: 0;
+}
+
+i {
+
+    padding: 0 10px 0 0;
+    color: black;
+}
+
+i:hover {
+    color: rgb(143, 143, 143)
+}
+
+#mainWindow {
+    margin: 0 auto;
+    width: 600px;
+    background: rgb(112, 235, 41);
+    padding: 0 5px 0 5px;
+    overflow: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+.note {
+    height: 25%;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0 10px 0;
+}
+
+.noteInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    align-items: center;
+}
+
+.noteDate, .noteExtra {
+    margin-top: 0;
+}
+
+.noteContent {
+    padding: 0 25px 0 25px;
+    display: flex;
+
+}
+
+.noteText {
+    margin: 0 15px 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.noteAction {
+    flex-shrink: 0;
+}
+
+hr {
+    width: 80%;
+    border: 0;
+    height: 1.5px;
+    background-color:rgb(105, 105, 105);
+}
+
+#optionsMenu {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#optionsMenu i {
+    margin: 0 auto;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#confirmBox {
+    z-index: 100;
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    right: 50%;
+    top: 50%;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* newNote.html ======================================= */
+
+
+#addNoteWindow {
+    margin: 0 auto;
+    width: 600px;
+    height: 900px;
+    background: rgb(112, 235, 41);
+    padding: 0 5px 0 5px;
+}
+
+form {
+
+    background-color: white;
+    width: calc(100% - 10%);
+    margin: 0 auto;
+    height: 50%;
+    text-align: center;
+}
+
+textarea, input {
+    background: inherit;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 20px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+
+}
+
+textarea {
+    height: inherit;
+    overflow: auto;
+    resize: none;
+}
+
+/* editNote.html ======================================= */
+
+.editHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
