@@ -19,14 +19,7 @@ if (page == "index.html") {
     optionsMenu = document.getElementById('optionsMenu');
     var editNoteBtn = document.getElementById("noteEdit");
     deleteNoteBtn = document.getElementById("noteDelete");
-    var filterBtn = document.getElementById("filterBtn");
-    
-    filterBtn.addEventListener('click', () => {
-        if (areOptionsVisible){
-            toggleOptionsMenu();
-            areOptionsVisible = false;
-        }
-    }); 
+  
 
     refreshPage();
 }
@@ -92,7 +85,7 @@ function openNoteMenu(i) {
 
     }
 
-    // padaryt, kad paspaudus kitur, o ne ant ikonu, pasleptu options menu
+   
 }
 
 function toggleOptionsMenu() {
@@ -200,7 +193,7 @@ function refreshPage() {
     var html = "";
 
 
-    // Padaryt, kad jeigu textas turi daug eiluciu, tai rodytu tik pirma ir pridetu daugtaskiu
+
 
     for (var i = 0; i < notes.length; i++) {
         if (notes[i].title != '') notes[i].text = notes[i].title;

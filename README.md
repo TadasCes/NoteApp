@@ -1,2 +1,0 @@
-# NoteApp
-Vanilla.js training 
